@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "storyteam",
+	"version": "1.0.0",
+	"name": "StoryTeam",
+	"description": "",
+	"authors": [
+		"feI2d"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/"
+	},
+	"license": "MIT",
+	"icon": "assets/storyteam/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.storyteam.StoryTeam"
+		],
+		"client":  [
+			"com.storyteam.StoryTeamClient"
+		],
+		"fabric-datagen": [
+			"com.storyteam.StoryTeamDataGenerator"
+		]
+	},
+	"mixins": [
+		"storyteam.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
