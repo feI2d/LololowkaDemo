@@ -33,41 +33,41 @@ public enum CustomArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getDurability(ArmorItem.Type type) {
-        return 0;
+        return durability;
     }
 
     @Override
     public int getProtection(ArmorItem.Type type) {
-        return 0;
+        return protection;
     }
 
     @Override
     public int getEnchantability() {
-        return 0;
+        return enchantability;
     }
 
     @Override
     public SoundEvent getEquipSound() {
-        return null;
+        return equipSound;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return null;
+        return repairIngredient;
     }
 
     @Override
     public String getName() {
-        return "";
+        return name;
     }
 
     @Override
     public float getToughness() {
-        return 0;
+        return toughness;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return 0;
+        return knockbackResistance;
     }
 }
