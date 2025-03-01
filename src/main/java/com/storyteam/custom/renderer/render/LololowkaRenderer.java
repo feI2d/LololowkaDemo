@@ -19,7 +19,6 @@ public class LololowkaRenderer extends GeoEntityRenderer<LololowkaEntity> {
     @Override
     public @Nullable RenderLayer getRenderType(LololowkaEntity animatable, Identifier texture, @Nullable VertexConsumerProvider bufferSource, float partialTick) {
         return super.getRenderType(animatable, texture, bufferSource, partialTick);
-//        return RenderLayer.getEntityTranslucent(texture);
     }
 
     @Override

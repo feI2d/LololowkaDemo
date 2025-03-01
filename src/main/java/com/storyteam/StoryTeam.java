@@ -23,5 +23,7 @@ public class StoryTeam implements ModInitializer, MinecraftWrapper {
 
 		CustomGroup.init();
 		CustomItemsManager.init();
+
+
 	}
 }

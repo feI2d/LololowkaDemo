@@ -46,6 +46,12 @@ public class CustomGroup {
             itemGroup.add(CustomItemsManager.ST_250);
             itemGroup.add(CustomItemsManager.ST_500);
             itemGroup.add(CustomItemsManager.SPEARS_OF_THE_FATHER);
+            itemGroup.add(CustomItemsManager.FULL_VIAL);
+            itemGroup.add(CustomItemsManager.SUB_MEDIUM_VIAL);
+            itemGroup.add(CustomItemsManager.MEDIUM_VIAL);
+            itemGroup.add(CustomItemsManager.EMPTY_VIAL);
+            itemGroup.add(CustomItemsManager.VIOLET_MASK);
+            itemGroup.add(CustomItemsManager.JDH_MASK);
         });
     }
 

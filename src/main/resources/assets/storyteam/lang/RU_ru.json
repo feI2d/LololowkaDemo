@@ -7,6 +7,10 @@
   "item.storyteam.jdh_jacket": "Халат Джона",
   "item.storyteam.jdh_leggins": "Штаны Джона",
   "item.storyteam.jdh_boots": "Ботинки Джона",
+  "item.storyteam.full_vial": "Полный фиал жизненной силы",
+  "item.storyteam.sub_medium_vial": "Полувыпитый фиал жизненной силы",
+  "item.storyteam.medium_vial": "Полупустой фиал жизненной силы",
+  "item.storyteam.empty_vial": "Пустой фиал жизненной силы",
   "item.storyteam.water_bottle": "Бутылка Воды",
   "item.storyteam.spears_of_the_father": "Копьё Отца",
   "item.storyteam.1v": "1 V",
@@ -20,5 +24,7 @@
   "item.storyteam.100st": "100 ST",
   "item.storyteam.250st": "250 ST",
   "item.storyteam.500st": "500 ST",
-  "itemGroup.storyteam": "StoryTeam"
+  "itemGroup.storyteam": "StoryTeam",
+  "item.storyteam.violet_mask": "Маска Междумирца",
+  "item.storyteam.jdh_mask": "Маска Междумирца"
 }

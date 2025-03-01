@@ -1,0 +1,78 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.model.big_spark": {
+			"loop": true,
+			"animation_length": 1.4286,
+			"bones": {
+				"основание_2": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.3571": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"ring_2": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.3571": {
+							"vector": [45, 0, 0]
+						},
+						"0.7143": {
+							"vector": [90, 0, 0]
+						},
+						"1.0714": {
+							"vector": [132.5, 0, 0]
+						},
+						"1.4286": {
+							"vector": [180, 0, 0]
+						}
+					}
+				},
+				"ring": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.3571": {
+							"vector": [0, 0, -42.5]
+						},
+						"0.7143": {
+							"vector": [0, 0, -90]
+						},
+						"1.0714": {
+							"vector": [0, 0, -135]
+						},
+						"1.4286": {
+							"vector": [0, 0, -180]
+						}
+					}
+				},
+				"ring2": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.3571": {
+							"vector": [0, 1, 0]
+						},
+						"0.9524": {
+							"vector": [0, -1, 0],
+							"easing": "easeInOutSine"
+						},
+						"1.4286": {
+							"vector": [0, 0, 0],
+							"easing": "linear"
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

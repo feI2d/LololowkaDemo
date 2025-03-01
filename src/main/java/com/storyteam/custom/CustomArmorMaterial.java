@@ -9,8 +9,9 @@ import net.minecraft.sound.SoundEvents;
 
 @Getter
 public enum CustomArmorMaterial implements ArmorMaterial {
-    LO_ARMOR(10000, 4, 26, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, Ingredient.EMPTY, "Одежда Ло", 5, 0),
-    JDH_ARMOR(10000, 4, 26, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, Ingredient.EMPTY, "Одежда Джона", 5, 0);
+    LO_ARMOR(-1, 4, 26, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, Ingredient.EMPTY, "Одежда Ло", 5, 0),
+    JDH_ARMOR(-1, 4, 26, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, Ingredient.EMPTY, "Одежда Джона", 5, 0),
+    INTERWORLD_MASK(-1, 4, 26, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, Ingredient.EMPTY, "", 5, 0);
     private final int durability;
     private final int protection;
     private final int enchantability;
@@ -58,7 +59,7 @@ public enum CustomArmorMaterial implements ArmorMaterial {
 
     @Override
     public String getName() {
-        return name;
+        return "";
     }
 
     @Override

@@ -1,13 +1,10 @@
 package com.storyteam.custom;
 
-import net.minecraft.block.Block;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.TagKey;
 
 public enum CustomToolMaterials implements ToolMaterial {
-    SPEARS_OF_THE_FATHER(10000, 0.2f, 70, 26, 0, Ingredient.EMPTY);
+    SPEARS_OF_THE_FATHER(-1, 0.2f, 70, 26, 0, Ingredient.EMPTY);
 
     private final int durability;
     private final float miningSpeedMultiplier;
