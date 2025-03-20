@@ -3,6 +3,7 @@ package com.storyteam.custom;
 import lombok.Getter;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -11,6 +12,7 @@ import net.minecraft.sound.SoundEvents;
 public enum CustomArmorMaterial implements ArmorMaterial {
     LO_ARMOR(-1, 4, 26, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, Ingredient.EMPTY, "Одежда Ло", 5, 0),
     JDH_ARMOR(-1, 4, 26, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, Ingredient.EMPTY, "Одежда Джона", 5, 0),
+    JODAH_WINGS(-1, 10, 28, SoundEvents.ITEM_ARMOR_EQUIP_ELYTRA, Ingredient.ofItems(Items.AMETHYST_SHARD), "", 5, 5),
     INTERWORLD_MASK(-1, 4, 26, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, Ingredient.EMPTY, "", 5, 0);
     private final int durability;
     private final int protection;

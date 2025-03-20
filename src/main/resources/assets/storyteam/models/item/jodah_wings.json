@@ -1,0 +1,124 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "texture_size": [
+    128,
+    128
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        64,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        -0.25,
+        -1.5
+      ],
+      "scale": [
+        0.28,
+        0.28,
+        0.28
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        64,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        -0.25,
+        -1.5
+      ],
+      "scale": [
+        0.28,
+        0.28,
+        0.28
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        135,
+        0
+      ],
+      "translation": [
+        0.75,
+        0.75,
+        0.5
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        135,
+        0
+      ],
+      "translation": [
+        0.75,
+        0.75,
+        0.5
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "ground": {
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        -17.25
+      ]
+    },
+    "gui": {
+      "rotation": [
+        21,
+        -140,
+        0
+      ],
+      "translation": [
+        -2.25,
+        -5,
+        0
+      ],
+      "scale": [
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        -24.5,
+        7.25
+      ]
+    },
+    "fixed": {
+      "translation": [
+        0,
+        -16.25,
+        -6
+      ]
+    }
+  },
+  "textures": {
+    "particle": "storyteam:item/jodah_wings"
+  }
+}

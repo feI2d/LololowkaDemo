@@ -8,9 +8,12 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
+import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.ModifyVariable;
+import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(ExperienceOrbEntity.class)
@@ -19,6 +22,18 @@ public class ExperienceOrbEntityMixin implements MinecraftWrapper {
     @Inject(method = "onPlayerCollision", at = @At("HEAD"))
     public void onPlayerCollision(PlayerEntity player, CallbackInfo ci) {
         player.experiencePickUpDelay = 0;
+    }
+
+    @Redirect(
+            method = "onPlayerCollision",
+            at = @At(
+                    value = "FIELD",
+                    target = "Lnet/minecraft/entity/player/PlayerEntity;experiencePickUpDelay:I",
+                    opcode = Opcodes.PUTFIELD
+            )
+    )
+    private void redirectExperiencePickUpDelay(PlayerEntity player, int value) {
+        // Пустой метод: игнорируем присваивание player.experiencePickUpDelay = 2
     }
 
     @Inject(method = "spawn", at = @At("HEAD"), cancellable = true)

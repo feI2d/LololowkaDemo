@@ -8,6 +8,7 @@ import com.storyteam.custom.items.jdh.JDHArmorItem;
 import com.storyteam.custom.items.lo.LoArmorItem;
 import com.storyteam.custom.items.money.MoneyItem;
 import com.storyteam.custom.items.money.MoneyType;
+import com.storyteam.custom.items.other.JodahWings;
 import com.storyteam.custom.items.other.WaterBottle;
 import com.storyteam.custom.items.other.vial.Vial;
 import com.storyteam.custom.items.other.vial.VialType;
@@ -59,6 +60,7 @@ public class CustomItemsManager {
 
     public static Item VIOLET_MASK;
     public static Item JDH_MASK;
+    public static Item JODAH_WINGS;
 
     public static Item register(Item item, String id) {
         Identifier itemID = Identifier.of(StoryTeam.MOD_ID, id);
@@ -96,8 +98,9 @@ public class CustomItemsManager {
         MEDIUM_VIAL = register(new Vial(VialType.MEDIUM), "medium_vial");
         EMPTY_VIAL = register(new Vial(VialType.EMPTY), "empty_vial");
 
-        VIOLET_MASK = register(new InterworldMask(CustomArmorMaterial.INTERWORLD_MASK, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(10000).rarity(Rarity.EPIC), TypeMask.VIOLET), "violet_mask");
-        JDH_MASK = register(new InterworldMask(CustomArmorMaterial.INTERWORLD_MASK, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(10000).rarity(Rarity.EPIC), TypeMask.JDH), "jdh_mask");
+        VIOLET_MASK = register(new InterworldMask(CustomArmorMaterial.INTERWORLD_MASK, ArmorItem.Type.HELMET, new Item.Settings().rarity(Rarity.EPIC), TypeMask.VIOLET), "violet_mask");
+        JDH_MASK = register(new InterworldMask(CustomArmorMaterial.INTERWORLD_MASK, ArmorItem.Type.HELMET, new Item.Settings().rarity(Rarity.EPIC), TypeMask.JDH), "jdh_mask");
+        JODAH_WINGS = register(new JodahWings(CustomArmorMaterial.JODAH_WINGS, ArmorItem.Type.CHESTPLATE, new Item.Settings().rarity(Rarity.EPIC)), "jodah_wings");
     }
 }
 
