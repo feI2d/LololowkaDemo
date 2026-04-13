@@ -6,10 +6,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class RegisterAttributes {
+public class AttributesRegistration {
     @SubscribeEvent
     public static void addAttributes(EntityAttributeCreationEvent event) {
-        System.out.println("Register attributes!");
         event.put(EntitiesRegistry.lololowka, Mob.createMobAttributes().build());
     }
 }

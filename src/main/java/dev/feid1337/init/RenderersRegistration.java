@@ -11,7 +11,6 @@ public class RenderersRegistration {
 
     @SubscribeEvent
     public static void registerEntities(EntityRenderersEvent.RegisterRenderers event) {
-        System.out.println("Registering Renderers!");
         event.registerEntityRenderer(EntitiesRegistry.lololowka, LololowkaRenderer::new);
     }
 
