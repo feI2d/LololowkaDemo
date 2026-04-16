@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceLocation;
 import org.zeith.hammeranims.api.geometry.model.IGeometricModel;
 import org.zeith.hammeranims.api.geometry.model.IRenderableBone;
 import org.zeith.hammeranims.core.client.render.entity.BedrockEntityRenderer;
+import org.zeith.hammeranims.core.client.render.entity.proc.HeadLookProcessor;
 
 public class LololowkaRenderer extends BedrockEntityRenderer<LololowkaEntity> {
 
@@ -15,14 +16,7 @@ public class LololowkaRenderer extends BedrockEntityRenderer<LololowkaEntity> {
 
     public LololowkaRenderer(EntityRendererProvider.Context pContext) {
         super(pContext, LololowkaGeo.geo, 0f);
-        getModel().addProcessor(this::process);
-    }
-
-    private void process(LololowkaEntity entity, IGeometricModel model, float partialTicks) {
-        IRenderableBone bone = model.getBone("Head");
-        if (bone == null) return;
-        bone.getRotation().y = (float) -Math.toRadians(entity.yHeadRot - entity.yBodyRot);
-        bone.getRotation().x = (float) -Math.toRadians(entity.getXRot());
+        getModel().addProcessor(new HeadLookProcessor<>("Head"));
     }
 
     @Override
